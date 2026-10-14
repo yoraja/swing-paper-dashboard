@@ -1,0 +1,546 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="robots" content="noindex,nofollow"/><title>Backtest results (2016–2025)</title><link rel="stylesheet" href="../style.css"/></head><body><div class="wrap"><p class="sub"><a href="../index.html">← Dashboard</a> · <a href="../strategy.html">How it works</a></p><h1>Backtest results (2016–2025)</h1><ul>
+<li><strong>Universe:</strong> point-in-time Nasdaq-100. A stock trades only while it is an index member, which removes survivorship bias.</li>
+<li><strong>Data:</strong> daily Yahoo prices.</li>
+<li><strong>Costs:</strong> 5 bps slippage per side, $0.005 per share, and 10 bps extra on stop fills.</li>
+<li><strong>Sizing:</strong> $100k start, 2% risk per trade, at most 10 positions. Only setups with at least 20 trades are shown.</li>
+<li><strong>Options:</strong> priced with a <strong>Black-Scholes model</strong> (implied volatility estimated from realized volatility). These are not historical option fills.</li>
+</ul>
+<h2>Benchmarks</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">benchmark</th>
+<th style="text-align: left;">CAGR</th>
+<th style="text-align: left;">MaxDD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Buy &amp; hold SPY</td>
+<td style="text-align: left;">14.9%</td>
+<td style="text-align: left;">-33.7%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Buy &amp; hold QQQ</td>
+<td style="text-align: left;">19.7%</td>
+<td style="text-align: left;">-35.1%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Equal-weight point-in-time NDX-100 (names with data, daily rebal)</td>
+<td style="text-align: left;">15.5%</td>
+<td style="text-align: left;">-32.3%</td>
+</tr>
+</tbody>
+</table>
+<h2>Long stock results</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">timeframe</th>
+<th style="text-align: left;">setup</th>
+<th style="text-align: right;">trades</th>
+<th style="text-align: left;">win_rate</th>
+<th style="text-align: right;">profit_factor</th>
+<th style="text-align: left;">CAGR</th>
+<th style="text-align: left;">MaxDD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Double Bottom / Failed Breakdown</td>
+<td style="text-align: right;">319</td>
+<td style="text-align: left;">40.1%</td>
+<td style="text-align: right;">1.24</td>
+<td style="text-align: left;">5.0%</td>
+<td style="text-align: left;">-31.7%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Continuation Divergence</td>
+<td style="text-align: right;">282</td>
+<td style="text-align: left;">39.4%</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: left;">3.6%</td>
+<td style="text-align: left;">-25.6%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Three White Soldiers</td>
+<td style="text-align: right;">272</td>
+<td style="text-align: left;">37.5%</td>
+<td style="text-align: right;">1.15</td>
+<td style="text-align: left;">3.1%</td>
+<td style="text-align: left;">-30.8%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Multi-Timeframe Pullback</td>
+<td style="text-align: right;">356</td>
+<td style="text-align: left;">27.8%</td>
+<td style="text-align: right;">1.23</td>
+<td style="text-align: left;">3.0%</td>
+<td style="text-align: left;">-19.2%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Mother Bar Breakout</td>
+<td style="text-align: right;">296</td>
+<td style="text-align: left;">39.2%</td>
+<td style="text-align: right;">1.12</td>
+<td style="text-align: left;">2.4%</td>
+<td style="text-align: left;">-30.7%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Shakeout Breakout</td>
+<td style="text-align: right;">374</td>
+<td style="text-align: left;">36.1%</td>
+<td style="text-align: right;">1.11</td>
+<td style="text-align: left;">2.3%</td>
+<td style="text-align: left;">-27.3%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Band Momentum Breakout</td>
+<td style="text-align: right;">508</td>
+<td style="text-align: left;">31.5%</td>
+<td style="text-align: right;">1.07</td>
+<td style="text-align: left;">1.7%</td>
+<td style="text-align: left;">-19.7%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Failed Breakdown Reclaim</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: left;">24.2%</td>
+<td style="text-align: right;">1.04</td>
+<td style="text-align: left;">0.7%</td>
+<td style="text-align: left;">-26.6%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Third-Wave Breakout</td>
+<td style="text-align: right;">199</td>
+<td style="text-align: left;">28.1%</td>
+<td style="text-align: right;">0.95</td>
+<td style="text-align: left;">-0.5%</td>
+<td style="text-align: left;">-31.6%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Wedge Divergence Reversal</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">17.1%</td>
+<td style="text-align: right;">0.56</td>
+<td style="text-align: left;">-1.4%</td>
+<td style="text-align: left;">-18.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Shakeout Breakout</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: left;">41.7%</td>
+<td style="text-align: right;">1.96</td>
+<td style="text-align: left;">7.6%</td>
+<td style="text-align: left;">-13.8%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Mother Bar Breakout</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: left;">46.8%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">7.5%</td>
+<td style="text-align: left;">-15.5%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Double Bottom / Failed Breakdown</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: left;">55.7%</td>
+<td style="text-align: right;">2.72</td>
+<td style="text-align: left;">7.2%</td>
+<td style="text-align: left;">-19.9%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Three White Soldiers</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">46.5%</td>
+<td style="text-align: right;">1.73</td>
+<td style="text-align: left;">6.5%</td>
+<td style="text-align: left;">-23.1%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Band Momentum Breakout</td>
+<td style="text-align: right;">131</td>
+<td style="text-align: left;">34.4%</td>
+<td style="text-align: right;">1.54</td>
+<td style="text-align: left;">5.5%</td>
+<td style="text-align: left;">-20.9%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Third-Wave Breakout</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: left;">62.1%</td>
+<td style="text-align: right;">3.53</td>
+<td style="text-align: left;">4.4%</td>
+<td style="text-align: left;">-7.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Continuation Divergence</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: left;">35.6%</td>
+<td style="text-align: right;">1.47</td>
+<td style="text-align: left;">3.4%</td>
+<td style="text-align: left;">-22.7%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Multi-Timeframe Pullback</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: left;">29.7%</td>
+<td style="text-align: right;">1.19</td>
+<td style="text-align: left;">1.1%</td>
+<td style="text-align: left;">-17.9%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Failed Breakdown Reclaim</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: left;">29.5%</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: left;">-0.1%</td>
+<td style="text-align: left;">-27.9%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monthly (quarterly trend)</td>
+<td style="text-align: left;">Three White Soldiers</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: left;">70.6%</td>
+<td style="text-align: right;">5.68</td>
+<td style="text-align: left;">9.1%</td>
+<td style="text-align: left;">-14.9%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monthly (quarterly trend)</td>
+<td style="text-align: left;">Mother Bar Breakout</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">60.0%</td>
+<td style="text-align: right;">3.15</td>
+<td style="text-align: left;">7.0%</td>
+<td style="text-align: left;">-18.1%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monthly (quarterly trend)</td>
+<td style="text-align: left;">Band Momentum Breakout</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">55.6%</td>
+<td style="text-align: right;">2.69</td>
+<td style="text-align: left;">6.8%</td>
+<td style="text-align: left;">-22.8%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monthly (quarterly trend)</td>
+<td style="text-align: left;">Continuation Divergence</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">57.1%</td>
+<td style="text-align: right;">2.44</td>
+<td style="text-align: left;">4.7%</td>
+<td style="text-align: left;">-20.4%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monthly (quarterly trend)</td>
+<td style="text-align: left;">Shakeout Breakout</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: left;">52.4%</td>
+<td style="text-align: right;">1.96</td>
+<td style="text-align: left;">3.5%</td>
+<td style="text-align: left;">-17.4%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quarterly (yearly trend)</td>
+<td style="text-align: left;">Mother Bar Breakout</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: left;">79.3%</td>
+<td style="text-align: right;">13.36</td>
+<td style="text-align: left;">10.3%</td>
+<td style="text-align: left;">-22.4%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quarterly (yearly trend)</td>
+<td style="text-align: left;">Three White Soldiers</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">84.0%</td>
+<td style="text-align: right;">13.15</td>
+<td style="text-align: left;">6.9%</td>
+<td style="text-align: left;">-13.9%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quarterly (yearly trend)</td>
+<td style="text-align: left;">Continuation Divergence</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">81.8%</td>
+<td style="text-align: right;">9.06</td>
+<td style="text-align: left;">5.5%</td>
+<td style="text-align: left;">-14.1%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quarterly (yearly trend)</td>
+<td style="text-align: left;">Band Momentum Breakout</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">37.1%</td>
+<td style="text-align: right;">1.6</td>
+<td style="text-align: left;">2.5%</td>
+<td style="text-align: left;">-28.0%</td>
+</tr>
+</tbody>
+</table>
+<h2>Stock vs modeled options (CAGR)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">timeframe</th>
+<th style="text-align: left;">setup</th>
+<th style="text-align: left;">Stock</th>
+<th style="text-align: left;">ATM_Call</th>
+<th style="text-align: left;">ITM_Call</th>
+<th style="text-align: left;">CoveredCall</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Wedge Divergence Reversal</td>
+<td style="text-align: left;">-1.4%</td>
+<td style="text-align: left;">-5.0%</td>
+<td style="text-align: left;">-3.8%</td>
+<td style="text-align: left;">-0.6%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Band Momentum Breakout</td>
+<td style="text-align: left;">1.7%</td>
+<td style="text-align: left;">-29.8%</td>
+<td style="text-align: left;">-23.2%</td>
+<td style="text-align: left;">0.2%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Three White Soldiers</td>
+<td style="text-align: left;">3.1%</td>
+<td style="text-align: left;">-18.1%</td>
+<td style="text-align: left;">-10.9%</td>
+<td style="text-align: left;">2.7%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Failed Breakdown Reclaim</td>
+<td style="text-align: left;">0.7%</td>
+<td style="text-align: left;">-24.8%</td>
+<td style="text-align: left;">-19.1%</td>
+<td style="text-align: left;">1.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Shakeout Breakout</td>
+<td style="text-align: left;">2.3%</td>
+<td style="text-align: left;">-21.2%</td>
+<td style="text-align: left;">-13.1%</td>
+<td style="text-align: left;">2.7%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Mother Bar Breakout</td>
+<td style="text-align: left;">2.4%</td>
+<td style="text-align: left;">-26.3%</td>
+<td style="text-align: left;">-17.0%</td>
+<td style="text-align: left;">4.5%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Continuation Divergence</td>
+<td style="text-align: left;">3.6%</td>
+<td style="text-align: left;">-8.8%</td>
+<td style="text-align: left;">-4.4%</td>
+<td style="text-align: left;">3.7%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Double Bottom / Failed Breakdown</td>
+<td style="text-align: left;">5.0%</td>
+<td style="text-align: left;">-10.1%</td>
+<td style="text-align: left;">-5.8%</td>
+<td style="text-align: left;">4.7%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Third-Wave Breakout</td>
+<td style="text-align: left;">-0.5%</td>
+<td style="text-align: left;">-7.7%</td>
+<td style="text-align: left;">-5.5%</td>
+<td style="text-align: left;">-0.3%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily (weekly trend)</td>
+<td style="text-align: left;">Multi-Timeframe Pullback</td>
+<td style="text-align: left;">3.0%</td>
+<td style="text-align: left;">-11.8%</td>
+<td style="text-align: left;">-9.5%</td>
+<td style="text-align: left;">1.4%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Band Momentum Breakout</td>
+<td style="text-align: left;">5.5%</td>
+<td style="text-align: left;">4.3%</td>
+<td style="text-align: left;">3.4%</td>
+<td style="text-align: left;">0.5%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Three White Soldiers</td>
+<td style="text-align: left;">6.5%</td>
+<td style="text-align: left;">4.3%</td>
+<td style="text-align: left;">4.5%</td>
+<td style="text-align: left;">1.4%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Failed Breakdown Reclaim</td>
+<td style="text-align: left;">-0.1%</td>
+<td style="text-align: left;">-0.6%</td>
+<td style="text-align: left;">-0.6%</td>
+<td style="text-align: left;">0.4%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Shakeout Breakout</td>
+<td style="text-align: left;">7.6%</td>
+<td style="text-align: left;">11.8%</td>
+<td style="text-align: left;">8.7%</td>
+<td style="text-align: left;">2.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Mother Bar Breakout</td>
+<td style="text-align: left;">7.5%</td>
+<td style="text-align: left;">4.6%</td>
+<td style="text-align: left;">4.7%</td>
+<td style="text-align: left;">3.5%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Continuation Divergence</td>
+<td style="text-align: left;">3.4%</td>
+<td style="text-align: left;">3.6%</td>
+<td style="text-align: left;">3.0%</td>
+<td style="text-align: left;">1.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Double Bottom / Failed Breakdown</td>
+<td style="text-align: left;">7.2%</td>
+<td style="text-align: left;">4.5%</td>
+<td style="text-align: left;">5.1%</td>
+<td style="text-align: left;">2.9%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Third-Wave Breakout</td>
+<td style="text-align: left;">4.4%</td>
+<td style="text-align: left;">5.7%</td>
+<td style="text-align: left;">4.4%</td>
+<td style="text-align: left;">2.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Weekly (monthly trend)</td>
+<td style="text-align: left;">Multi-Timeframe Pullback</td>
+<td style="text-align: left;">1.1%</td>
+<td style="text-align: left;">1.5%</td>
+<td style="text-align: left;">0.8%</td>
+<td style="text-align: left;">-0.2%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monthly (quarterly trend)</td>
+<td style="text-align: left;">Band Momentum Breakout</td>
+<td style="text-align: left;">6.8%</td>
+<td style="text-align: left;">10.4%</td>
+<td style="text-align: left;">9.2%</td>
+<td style="text-align: left;">2.3%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monthly (quarterly trend)</td>
+<td style="text-align: left;">Three White Soldiers</td>
+<td style="text-align: left;">9.1%</td>
+<td style="text-align: left;">14.6%</td>
+<td style="text-align: left;">13.8%</td>
+<td style="text-align: left;">2.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monthly (quarterly trend)</td>
+<td style="text-align: left;">Shakeout Breakout</td>
+<td style="text-align: left;">3.5%</td>
+<td style="text-align: left;">-2.1%</td>
+<td style="text-align: left;">-0.9%</td>
+<td style="text-align: left;">1.9%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monthly (quarterly trend)</td>
+<td style="text-align: left;">Mother Bar Breakout</td>
+<td style="text-align: left;">7.0%</td>
+<td style="text-align: left;">14.9%</td>
+<td style="text-align: left;">13.6%</td>
+<td style="text-align: left;">2.1%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monthly (quarterly trend)</td>
+<td style="text-align: left;">Continuation Divergence</td>
+<td style="text-align: left;">4.7%</td>
+<td style="text-align: left;">3.9%</td>
+<td style="text-align: left;">3.8%</td>
+<td style="text-align: left;">0.5%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quarterly (yearly trend)</td>
+<td style="text-align: left;">Band Momentum Breakout</td>
+<td style="text-align: left;">2.5%</td>
+<td style="text-align: left;">3.0%</td>
+<td style="text-align: left;">2.4%</td>
+<td style="text-align: left;">-2.1%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quarterly (yearly trend)</td>
+<td style="text-align: left;">Three White Soldiers</td>
+<td style="text-align: left;">6.9%</td>
+<td style="text-align: left;">7.2%</td>
+<td style="text-align: left;">7.4%</td>
+<td style="text-align: left;">1.5%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quarterly (yearly trend)</td>
+<td style="text-align: left;">Mother Bar Breakout</td>
+<td style="text-align: left;">10.3%</td>
+<td style="text-align: left;">5.7%</td>
+<td style="text-align: left;">5.5%</td>
+<td style="text-align: left;">2.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quarterly (yearly trend)</td>
+<td style="text-align: left;">Continuation Divergence</td>
+<td style="text-align: left;">5.5%</td>
+<td style="text-align: left;">6.7%</td>
+<td style="text-align: left;">6.2%</td>
+<td style="text-align: left;">1.2%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Takeaways:</strong>
+- No setup beat buy-and-hold over this period. The weekly and monthly setups made about 7–10% a year, with shallower drawdowns than the index.
+- Daily-timeframe versions made 0–5% after costs. Short versions lost money.
+- Modeled at-the-money calls improved several monthly results, but deepened drawdowns.
+- 15-minute versions of the same entries lost money after costs.</p><p class="sub">Paper trading research. Not financial advice.</p></div></body></html>

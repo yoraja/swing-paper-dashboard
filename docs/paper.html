@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="robots" content="noindex,nofollow"/><title>How the paper runner works</title><link rel="stylesheet" href="../style.css"/></head><body><div class="wrap"><p class="sub"><a href="../index.html">← Dashboard</a> · <a href="../strategy.html">How it works</a></p><h1>How the paper runner works</h1><ul>
+<li><strong>15-minute pass:</strong> runs every 15 minutes during market hours (06:30–13:00 PT, weekdays). It checks order status and, when a buy-stop fills:</li>
+<li>places the stock exits: two one-cancels-other orders (target 1 or stop, target 2 or stop) plus a stop for the remaining 30%;</li>
+<li>buys the call;</li>
+<li>mirrors stock exits on the call.</li>
+<li><strong>End-of-day pass:</strong> runs at 13:45 PT on weekdays. It scans completed bars for new signals and places buy-stops, applies the EMA exit, and cancels buy-stops whose entry window has ended.</li>
+<li><strong>Duplicate protection:</strong> every order has a fixed client id built from symbol, setup, timeframe and signal date. Re-runs never place a second order.</li>
+<li><strong>Ledger:</strong> a trade ledger and a daily equity file per track feed this dashboard. The page republishes only when its content changes.</li>
+<li><strong>Safety:</strong> the paper endpoint is enforced, and the account is separate from other bots. Credentials are never written to logs or to this site.</li>
+</ul><p class="sub">Paper trading research. Not financial advice.</p></div></body></html>
