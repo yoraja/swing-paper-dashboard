@@ -20,7 +20,7 @@
 <tr>
 <td>Mother Bar Breakout</td>
 <td>13 EMA &gt; 26 EMA with close &gt; 26 EMA, or MACD histogram rising</td>
-<td>bar with range ≥ 1.2 ATR, then 1–4 inside bars, then a close above its high</td>
+<td>bar with range ≥ 1.2 ATR, then 1–8 inside bars, then a green bar closing above its high</td>
 <td>mother bar low</td>
 <td>52-bar high, else 3R</td>
 </tr>
@@ -33,18 +33,19 @@
 </tr>
 <tr>
 <td>Band Momentum Breakout</td>
-<td>close above the band middle and MACD histogram rising</td>
-<td>close above the upper band (band rising), RSI &gt; 60, volume above average, 5 EMA &gt; 13 EMA, +DI &gt; −DI, ADX &gt; 15 and rising, two higher swing lows</td>
+<td>close above the band middle, MACD histogram rising, and RSI &gt; 50</td>
+<td>a fresh close above the upper band (no close above it in the prior 3 bars; band rising), close above the 50 EMA, RSI &gt; 60, volume above average, 5 EMA &gt; 13 EMA, +DI &gt; −DI, ADX &gt; 15 and rising, two higher swing lows</td>
 <td>breakout bar low</td>
 <td>52-bar high, else 3R</td>
 </tr>
 <tr>
 <td>Double Bottom / Failed Breakdown</td>
 <td>low stays above the lower band</td>
-<td>second low within 3% of the first (≥ 8 bars apart), or a brief undercut that closes back above; bullish bar, RSI &gt; 40, stochastic turning up from below 35, low tags the lower band</td>
+<td>second low at most 0.5× ATR(14) above the first (≥ 8 bars apart), or a brief undercut that closes back above the first; a bullish engulfing, piercing or morning-star bar, RSI &gt; 40, stochastic turning up from below 35, low tags the lower band, volume above average</td>
 <td>lower of the two lows</td>
 <td>neckline + pattern height</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Chart-only setups:</strong> Triangle Breakout, Wedge Divergence Reversal and Failed Breakdown Reclaim are shown on the chart indicator but are <strong>not traded</strong> by the paper bot. A rule review on Oct 26, 2026 found no edge in their backtests. Multi-Timeframe Pullback, Third-Wave Breakout and Continuation Divergence are also chart-only. The paper bot trades only Three White Soldiers, Mother Bar Breakout and Shakeout Breakout (see How it works).</p>
 <p><strong>Shared rules:</strong> the entry is a buy-stop at the signal bar's high, valid for the next bar only. Reward must be at least 3× risk. Exits are 50% at target 1, 20% at target 2, and 30% on the 5/13 EMA cross. Every rule uses only completed bars, so there is no look-ahead.</p><p class="sub">Paper trading research. Not financial advice.</p></div></body></html>
